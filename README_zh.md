@@ -79,6 +79,17 @@ python web_ui.py
 * 你可以获取 Serper APIs: [Serper API](https://www.microsoft.com/en-us/bing/apis/bing-web-search-api)
 
 以下是网络搜索功能的示例： [Web Search Example](figures/web_search.mp4).
+<details><summary>Web Search Example</summary> 
+  
+
+
+https://github.com/Liuziyu77/Soda_Dev/assets/137670115/7bc73223-eaa9-44f5-a379-8bf204d4380c
+
+
+
+
+</details>
+
 
 ### 🔎 本地数据库检索
 与本地数据库上的检索增强生成（RAG）相关的代码存放在 `RAG` 文件夹中。这个文件夹实现了构建您自己的本地数据库并从中检索信息。它包括 `text-text` 检索、`image-image` 检索以及 `image-image&text pair` 检索。您可以通过运行不同的 `.ipynb` 文件来测试检索功能，我们提供了三个脚本作为示例。
@@ -89,6 +100,19 @@ python web_ui.py
 SODA使用 **Sentense transfomer** 作文文本编码器. 不久将会支持更多的文本编码器!
 
 以下是文本检索的示例： [Text Retrieve Example](figures/text_retrieve.mp4).
+<details><summary>Text Retrieve Example</summary> 
+  
+
+
+
+
+https://github.com/Liuziyu77/Soda_Dev/assets/137670115/7a2042b9-7c03-44f4-9e36-abb7f244da19
+
+
+
+
+
+</details>
 
 #### 2. 图像到图像的检索
 运行 `./RAG/image_rag.ipynb` 构建本地图像数据库并从中检索图像。 你所需要做的唯一一件事就是修改上传的文件夹的路径。
@@ -96,6 +120,20 @@ SODA使用 **Sentense transfomer** 作文文本编码器. 不久将会支持更�
 我们使用 **CLIP-B/32** 作为图像编码器. 不久将会支持更多的图像编码器!
 
 以下是图像检索的示例： [Image Retrieve Example](figures/image_retrieve.mp4).
+<details><summary>Image Retrieve Example</summary> 
+  
+
+
+
+
+
+https://github.com/Liuziyu77/Soda_Dev/assets/137670115/761e489c-d572-4070-bb29-bb31d891f661
+
+
+
+
+
+</details>
 
 #### 3. 图像到图文对的检索
 运行 `./RAG/multimodal_rag.ipynb` 构建多模态数据库并从中检索信息。 在这里，用户需要提供了一个 `.tsv` 文件，包括`ID`, `PATH`, `INFO`. 一个示例的 TSV 文件是 `./RAG/artwork_data.tsv`.
