@@ -30,9 +30,8 @@ SODA的架构如下所示：
 <div align="center">
 <img src="figures/soda_architecture.png" width = "650" alt="soda_system" align=center />
 </div>
-
-我们现在支持 **网络检索**, **文本检索(本地数据库)** and **图像检索(本地数据库)**. 
-在文本检索阶段, 我们实现了**两阶段**检索过程, 第一阶段从数据库中检索信息，第二阶段对检索到的文本进行重新排序.
+我们现在支持 **网络检索**, **文本检索(本地数据库)** and **图像检索(本地数据库)**。 
+在文本检索阶段，我们实现了**两阶段**检索过程，第一阶段从数据库中检索信息，第二阶段对检索到的文本进行重新排序。
 
 ## 📢 New
 - 🚀 [04/18/2024] 我们开源了第一版的SODA，即将发布更多更新！！！ 
@@ -95,9 +94,9 @@ https://github.com/Liuziyu77/Soda_Dev/assets/137670115/7bc73223-eaa9-44f5-a379-8
 与本地数据库上的检索增强生成（RAG）相关的代码存放在 `RAG` 文件夹中。这个文件夹实现了构建您自己的本地数据库并从中检索信息。它包括 `text-text` 检索、`image-image` 检索以及 `image-image&text pair` 检索。您可以通过运行不同的 `.ipynb` 文件来测试检索功能，我们提供了三个脚本作为示例。
 
 #### 1. 文本到文本的检索
-运行 `./RAG/text_rag.ipynb` 来构建本地文本数据库并从中检索信息. 你所需要做的唯一一件事就是修改上传的文件的路径. SODA现在支持 TXT, DOCX, PDF 等文件格式. 
+运行 `./RAG/text_rag.ipynb` 来构建本地文本数据库并从中检索信息，你所需要做的唯一一件事就是修改上传的文件的路径。 SODA现在支持 TXT, DOCX, PDF 等文件格式。
 
-SODA使用 **Sentense transfomer** 作文文本编码器. 不久将会支持更多的文本编码器!
+SODA使用 **Sentense transfomer** 作文文本编码器，不久将会支持更多的文本编码器!
 
 以下是文本检索的示例： [Text Retrieve Example](figures/text_retrieve.mp4).
 <details><summary>Text Retrieve Example</summary> 
@@ -117,7 +116,7 @@ https://github.com/Liuziyu77/Soda_Dev/assets/137670115/7a2042b9-7c03-44f4-9e36-a
 #### 2. 图像到图像的检索
 运行 `./RAG/image_rag.ipynb` 构建本地图像数据库并从中检索图像。 你所需要做的唯一一件事就是修改上传的文件夹的路径。
 
-我们使用 **CLIP-B/32** 作为图像编码器. 不久将会支持更多的图像编码器!
+我们使用 **CLIP-B/32** 作为图像编码器。不久将会支持更多的图像编码器!
 
 以下是图像检索的示例： [Image Retrieve Example](figures/image_retrieve.mp4).
 <details><summary>Image Retrieve Example</summary> 
@@ -136,7 +135,7 @@ https://github.com/Liuziyu77/Soda_Dev/assets/137670115/761e489c-d572-4070-bb29-b
 </details>
 
 #### 3. 图像到图文对的检索
-运行 `./RAG/multimodal_rag.ipynb` 构建多模态数据库并从中检索信息。 在这里，用户需要提供了一个 `.tsv` 文件，包括`ID`, `PATH`, `INFO`. 一个示例的 TSV 文件是 `./RAG/artwork_data.tsv`.
+运行 `./RAG/multimodal_rag.ipynb` 构建多模态数据库并从中检索信息。 在这里，用户需要提供了一个 `.tsv` 文件，包括`ID`, `PATH`, `INFO`。一个示例的 TSV 文件是 `./RAG/artwork_data.tsv`。
 
 ### 🐑 大语言模型
 我们使用 InternLM-Xcomposer2 （一个基于 InternLM2-7B 的视觉语言模型）或者 GPT-4 来处理来自网络或者本地数据库的信息，并反馈给使用者。其中 InternLM-Xcomposer2 在本地运行。不久我们将会支持更多类型的大语言模型作为 SODA 的信息处理大脑。
