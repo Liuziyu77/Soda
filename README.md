@@ -82,15 +82,9 @@ Additionally, we will offer comprehensive search capabilities beyond **text**, i
 
 Here is the [Web Search Example](figures/web_search.mp4).
 <details><summary>Web Search Example</summary> 
-  
-
-
 https://github.com/Liuziyu77/Soda_Dev/assets/137670115/7bc73223-eaa9-44f5-a379-8bf204d4380c
-
-
-
-
 </details>
+
 ### 🔎 Retrieve Pipeline Based on Local Database
 The code related to RAG on local database is stored in the `RAG` folder. This folder is the implement of building your own local database and retrieve information from it. It includes `text-text` retrieve, `image-image` retrieve and `image-image&text pair` retrieve. You can test the retrieval functionalities by running different `.ipynb` files, we provide three scripts as examples.
 
@@ -101,18 +95,9 @@ We use **Sentense transfomer** as the text encoder. More encoder will be support
 
 Here is the [Text Retrieve Example](figures/text_retrieve.mp4).
 <details><summary>Text Retrieve Example</summary> 
-  
-
-
-
-
 https://github.com/Liuziyu77/Soda_Dev/assets/137670115/7a2042b9-7c03-44f4-9e36-abb7f244da19
-
-
-
-
-
 </details>
+
 #### 2. Image-Image retrieve
 User can run the `./RAG/image_rag.ipynb` to build a image database and retrieve information from it. The only thing you need to do is just providing a folder path.
 
@@ -120,19 +105,9 @@ We use **CLIP-B/32** as the image encoder. More visual encoder will be supported
 
 Here is the [Image Retrieve Example](figures/image_retrieve.mp4).
 <details><summary>Image Retrieve Example</summary> 
-  
-
-
-
-
-
 https://github.com/Liuziyu77/Soda_Dev/assets/137670115/761e489c-d572-4070-bb29-bb31d891f661
-
-
-
-
-
 </details>
+
 #### 3. Image-Image&Text retrieve
 User can run the `./RAG/multimodal_rag.ipynb` to build a multimodal database and retrieve information from it. Here, you need to provide a `.tsv` file which include your data's `ID`, `PATH`, `INFO`. An example TSV file is `./RAG/artwork_data.tsv`.
 
