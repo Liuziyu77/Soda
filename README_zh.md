@@ -141,5 +141,15 @@ https://github.com/Liuziyu77/Soda_Dev/assets/137670115/761e489c-d572-4070-bb29-b
 ### 🐑 大语言模型
 我们使用 InternLM-Xcomposer2 （一个基于 InternLM2-7B 的视觉语言模型）或者 GPT-4 来处理来自网络或者本地数据库的信息，并反馈给使用者。其中 InternLM-Xcomposer2 在本地运行。不久我们将会支持更多类型的大语言模型作为 SODA 的信息处理大脑。
 
+### ✒️ Citation
+```
+@misc{2024SODA,
+    title={SODA: Search, Organize, Discovery Anything},
+    author={SODA Team},
+    howpublished = {\url{https://github.com/Liuziyu77/Soda}},
+    year={2024}
+}
+```
+
 ## 📜 License
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg) ![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg) **Usage and License Notices**: The data and code are intended and licensed for research use only.
