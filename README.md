@@ -35,7 +35,7 @@ We support **web search**, **text retrieval(local database)** and **image retrie
 In text retrieval, we have implemented a **two-stage** retrieval process, consisting of initial database retrieval and subsequent reranking.
 
 ## 📢 News
-- 🚀 [04/15/2024] 
+- 🚀 [04/18/2024] We have open-sourced the first version of SODA, and more updates will be coming soon!!! 
 
 ## 💡 Highlights
 - 🔥 **New technology framework.** We have developed an LLM-driven information integration tool, which provides a technical framework for retrieval argumented generation(RAG) and tool use directions for AI Agents.
