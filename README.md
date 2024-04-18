@@ -139,5 +139,15 @@ User can run the `./RAG/multimodal_rag.ipynb` to build a multimodal database and
 ### 🐑 LLMs
 We use the InternLM-Xcomposer2(a vision-language large model (VLLM) based on InternLM2-7B) or GPT-4 to process the information from web and database, and feedback to users. We will soon support more LLMs as the information processing core for SODA.
 
+### ✒️ Citation
+```
+@misc{2024SODA,
+    title={SODA: Search, Organize, Discovery Anything},
+    author={SODA Team},
+    howpublished = {\url{https://github.com/Liuziyu77/Soda}},
+    year={2024}
+}
+```
+
 ## 📜 License
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg) ![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg) **Usage and License Notices**: The data and code are intended and licensed for research use only.
